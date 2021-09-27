@@ -1,0 +1,10 @@
+{
+  "server_url": "https://reset.build:8069/v2"
+  "client_id": "YOUR_CLIENT_ID",
+  "client_secret": "YOUR_CLIENT_SECRET",
+  "sendgrid" : {
+    "from_email": "FROM_EMAIL",
+    "to_email": "TO_EMAIL",
+    "sendgrid_api_key": "SENDGRID_API_KEY"
+  }
+}

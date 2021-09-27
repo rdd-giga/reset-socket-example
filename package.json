@@ -1,0 +1,17 @@
+{
+  "name": "reset-socket-example",
+  "version": "1.0.0",
+  "description": "Sample code for RESET Socket API",
+  "main": "index.js",
+  "author": "Xiang Chu <charles.chu@giga.build>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
+    "socket.io-client": "^4.1.2",
+    "winston": "^2.4.4"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "task": "node ./tasks/tempTasks.js"
+  }
+}
