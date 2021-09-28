@@ -5,11 +5,13 @@ const Socket = require('./models/socket');
 
 let socket = new Socket();
 
-/*
-  Below is a fake daily task
-  Implement these code base on your data strategy, for example:
-  1. Run the hourly task by setInterval, grab the monitor/reading info from db/cache
-  2. Listen to a RabbitMQ, if there is new data, call the emit task
+
+
+/**
+* The following code is implementation for a fake daily task.
+* Implement these code base on your data strategy, for example:
+* 1. Run the hourly task by setInterval, grab the monitor/reading info from db/cache.
+* 2. Listen to a RabbitMQ, if there is new data, call the emit task.
 */
 setInterval(dailyTask, 24*36*1000);
 

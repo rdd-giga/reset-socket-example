@@ -2,15 +2,26 @@ const { getTimeStamp } = require('../lib/utils');
 const config = require('../config.json');
 
 class Monitors {
+/**
+ * Represents a monitor message.
+ * @param   {String} connection_id    connection_id of the monitor
+ * @returns {Object} - The monitor with imformation message object itself.
+ * @constructor
+ */
   constructor(connection_id) {
     this.monitorCreatingMessage = {
       'message_id': `Monitors__${config.client_id}__${connection_id}__${getTimeStamp()}`, //Unique message_id sample.
       "message_type": "create",
       "data": this.getMonitorsInfo(connection_id)
     }
-
   }
 
+  /**
+  * Function that get a monitor information
+  * Fake code here, Use your own code to get lastest monitor data.
+  * @param    {String} connection_id    connection_id of the monitor
+  * @return   {Object} - Monitor information message
+  */
   getMonitorsInfo(connection_id){
     return {
         "label": `testing_${connection_id}_for_${config.client_id}`,

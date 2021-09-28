@@ -5,14 +5,16 @@ const Socket = require('../models/socket');
 
 let socket = new Socket(tempTask); //Run temporary task in callback.
 
-/*
-  Below is a fake temporary task;
-  Run these tasks for pushing data or
-  creating/updating monitor for the one-off requirements.
-  Once after editing this file and the functions,
-  just run task by command: `npm run task`.
-  After running these tasks, close it mannually.
-  Implement these code base on your data strategy and requirements.
+
+
+/**
+* The following code is a implementation for fake temporary task.
+* Run these tasks for pushing data or
+* creating/updating monitor for the one-off requirements.
+* Once after editing this file and the functions,
+* just run task by command: `npm run task`.
+* After running these tasks, close it mannually.
+* Implement these code base on your data strategy and requirements.
 */
 function tempTask(){
   // let monitors = grab_monitor_info_from_backend

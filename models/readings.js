@@ -2,6 +2,12 @@ const { getTimeStamp } = require('../lib/utils');
 const config = require('../config.json');
 
 class Readings {
+/**
+ * Represents a reading message.
+ * @param   {String} connection_id    connection_id of the monitor
+ * @returns {Object} - The reading message.
+ * @constructor
+ */
   constructor(connection_id) {
     this.message = {
     'message_id': `Readings__${config.client_id}__${connection_id}__${getTimeStamp()}`, //Unique message_id sample.
@@ -13,11 +19,14 @@ class Readings {
     };
   }
 
-  /*Fake code here
-    Use your own code to get lastest reading data.
-    Maybe intervally read the data from redis(cache),
-    Maybe subscribe to a RabbitMQ
-    Maybe grab from database
+  /**
+  * Function that get a reading information
+  * Fake code here, Use your own code to get lastest reading data.
+  * Maybe intervally read the data from redis(cache),
+  * Maybe subscribe to a RabbitMQ
+  * Maybe grab from database
+  * @param    {String} connection_id    connection_id of the monitor
+  * @return   {Object} - reading information message
   */
   getReadings(connection_id){
     return [
