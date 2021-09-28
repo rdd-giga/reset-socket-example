@@ -3,6 +3,7 @@
   "client_id": "YOUR_CLIENT_ID",
   "client_secret": "YOUR_CLIENT_SECRET",
   "sendgrid" : {
+    "notify": false,
     "from_email": "FROM_EMAIL",
     "to_email": "TO_EMAIL",
     "sendgrid_api_key": "SENDGRID_API_KEY"
