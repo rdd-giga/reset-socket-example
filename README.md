@@ -1,23 +1,23 @@
 # reset-socket-example
-Sample code for Data Providers connecting to RESET Socket API,  pushing monitor information and reading data.
+Sample code for RESET Data Providers connecting via the RESET Socket API for pushing monitor information and readings data.
 
+This sample is built on node.js.
 
 # Usage
+This repository includes examples on the following:
 
-1. Create a Socket.io-client connected to [RESET Socket API](https://doc.reset.build/providers/v2).
-2. Authenticated the socket connection
-3. Daily/Houly Pushing data to RESET Socket API Server.
-4. Run temporay task for pushing data/create monitor by once-off requirements.
-5. Validate the message from client.
-6. Handling server's response.
-7. Integrate with email notification for error handling
+1. Create a socket.io client that connects to the RESET Cloud via the [RESET Socket API](https://doc.reset.build/providers/v2).
+2. Authenticate the socket connection
+3. Daily or Hourly data push to the RESET Cloud via the RESET Socket API Server.
+4. Run manual tasks for re-pushing missing data or creating monitors.
+5. Validate messages from client.
+6. Handle servers responses.
+7. Integrate with email notification for error handling.
 
-#Setup
+# Setup
+1. Download the code and run ``npm install``
+2. Make a copy of the config.json template ``cp config.json.template config.json`` and edit the config.json using your own system's configuration.
+3. Run the daily/hourly data pushing service as a long term connection: ``npm start``. The code can be found in ./index.js. Remember to edit the information based on your requirements.
+4. Run manual tasks data pushes with temporary requirements: ``npm run task`. The code entrance is ./tasks/tempTasks.js. Remember to edit the information based on your requirements and remember to close the tasks manually.
 
-1. Download the code, and ``npm install``
-
-2. Copy the config template``cp config.json.template config.json``, then edit the confg.json use your ow configruation.
-
-3. Run the daily/hourly pushing serverice as a long-run connection: ``npm start``.(The code entrance is ./index.js, remember edit the information base on your requirements)
-
-4. Run the temporay task for once-off requirments of pushing data: ``npm run task`(The code entrance is ./tasks/tempTasks.js, remember edit the information base on your requirements),remember to close the taks mannually.
+If there are any questions or issues, please notify us by sending an email to info[at]reset.build. Thanks!
