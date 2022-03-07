@@ -11,6 +11,9 @@ class Socket {
  * @param   {Function} callback    callback after conneciton authenticated.
  * @returns {Object} - The socket client.
  * @constructor
+ * @note: the v2 server url is: `http://reset.build:8068/v2`, where `/v2` is the
+ *       namespace. Please note that clients in other languages may handle the namespace
+ *       in a different way. Please double check your client's documentation.
  */
   constructor(callback) {
     this.authenticated = false;
